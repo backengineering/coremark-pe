@@ -6,7 +6,8 @@ type = "executable"
 sources = ["src/**.c", "inc/**.h"]
 include-directories = ["inc"]
 compile-definitions = ["PERFORMANCE_RUN=1", "ITERATIONS=100000"]
+compile-options = ["/O2", "/GL"]
 
 cmake-before = """
-add_link_options("/O2" "/DEBUG:FULL" "/LTCG" "/GL")
+add_link_options("/DEBUG:FULL" "/LTCG")
 """

@@ -11,7 +11,7 @@ Build 64bit
 ```
 cmake -B .build
 cd .build
-cmake --build . --Release
+cmake --build . --config Release
 ```
 
 Build 32bit
@@ -19,7 +19,7 @@ Build 32bit
 ```
 cmake -B .build -DCMAKE_GENERATOR_PLATFORM=WIN32
 cd .build
-cmake --build . --Release
+cmake --build . --config Release
 ```
 
 ---

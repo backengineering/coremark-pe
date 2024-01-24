@@ -28,7 +28,7 @@ project(coremark-pe)
 
 # Target: coremark-pe
 set(CMKR_TARGET coremark-pe)
-add_link_options("/O2" "/DEBUG:FULL" "/LTCG" "/GL")
+add_link_options("/DEBUG:FULL" "/LTCG")
 
 set(coremark-pe_SOURCES
 	"src/core_list_join.c"
@@ -50,6 +50,11 @@ source_group(TREE ${CMAKE_CURRENT_SOURCE_DIR} FILES ${coremark-pe_SOURCES})
 target_compile_definitions(coremark-pe PRIVATE
 	PERFORMANCE_RUN=1
 	ITERATIONS=100000
+)
+
+target_compile_options(coremark-pe PRIVATE
+	"/O2"
+	"/GL"
 )
 
 target_include_directories(coremark-pe PRIVATE

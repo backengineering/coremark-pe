@@ -55,6 +55,8 @@ target_compile_definitions(coremark-pe PRIVATE
 target_compile_options(coremark-pe PRIVATE
 	"/O2"
 	"/GL"
+	"/W0"
+	"/MP"
 )
 
 target_include_directories(coremark-pe PRIVATE

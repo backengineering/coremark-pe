@@ -1,3 +1,10 @@
+# Back Engineering Labs Fork
+
+I just added cmkr/cmake as the build system and changed a few lines of code. Mostly i added MSVC pre-defined macros to determine the
+width of the `ee_ptr_int`. At Back Engineering Labs we are building an adhoc recompiler that will also be the base of for our inhouse bin2bin obfuscator. 
+We need to have some benchmarks to see how passes effect performance.
+
+---
 
 # Introduction
 

@@ -4,6 +4,24 @@ I just added cmkr/cmake as the build system and changed a few lines of code. Mos
 width of the `ee_ptr_int`. At Back Engineering Labs we are building an adhoc recompiler that will also be the base of for our inhouse bin2bin obfuscator. 
 We need to have some benchmarks to see how passes effect performance.
 
+### Build
+
+Build 64bit
+
+```
+cmake -B .build
+cd .build
+cmake --build . --Release
+```
+
+Build 32bit
+
+```
+cmake -B .build -DCMAKE_GENERATOR_PLATFORM=WIN32
+cd .build
+cmake --build . --Release
+```
+
 ---
 
 # Introduction
